@@ -1,8 +1,8 @@
 /* Base Styles */
 :root {
-  --primary: #8b5cf6;
-  --primary-dark: #7c3aed;
-  --primary-light: #a78bfa;
+  --primary: #0f2984;
+  --primary-dark: #344abc;
+  --primary-light: #825feb;
   --accent: #c4b5fd;
   --dark: #1f2937;
   --light: #f9fafb;
@@ -233,7 +233,7 @@ img {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #223aa3 0%, #9762cc 100%);
   color: white;
   display: flex;
   align-items: center;
@@ -254,7 +254,7 @@ img {
   height: 150px;
   margin: 0 auto 2rem;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.3);
+  border: 1.5px solid white;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   animation: float 6s ease-in-out infinite;
@@ -282,7 +282,7 @@ img {
 .hero-description {
   max-width: 600px;
   margin: 0 auto 2rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
   font-size: 1rem;
 }
 
@@ -300,7 +300,7 @@ img {
 }
 
 .social-link:hover {
-  color: #ffd700;
+  color: #250650;
   transform: translateY(-5px);
 }
 
@@ -325,7 +325,8 @@ img {
 }
 
 .download-btn {
-  background-color: white;
+  background-color: #ebe9f4;
+  border: 2px solid rgb(92, 19, 148);
   color: var(--primary);
 }
 
@@ -336,13 +337,13 @@ img {
 }
 
 .contact-btn {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  background-color: #ebe9f4;
+  border: 2px solid rgb(92, 19, 148);
+  color: rgb(20, 46, 108);
 }
 
 .contact-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ffd700;
   transform: translateY(-3px);
 }
 
