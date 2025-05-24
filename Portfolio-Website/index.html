@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Makwana - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">Payal Makwana</div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#tech" class="nav-link">Tech Stack</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#tech" class="mobile-link">Tech Stack</a>
+                <a href="#projects" class="mobile-link">Projects</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image" data-aos="zoom-in">
+                    <img src="profile.jpg" alt="Payal Makwana">
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                    Hi, I'm <span class="highlight">Payal</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    Aspiring Software Developer & Tech Enthusiast
+                </p>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+                    B.Tech ICT student at Marwadi University with a passion for creating innovative solutions through code. 
+                    Currently exploring the realms of web development, AI/ML, and competitive programming.
+                </p>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="800">
+                    <a href="https://github.com/Payal-mak" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/payal-makwana-a2b73829a/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Payal-Makwana/" target="_blank" class="social-link">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="mailto:iampayal018@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="cta-buttons" data-aos="fade-up" data-aos-delay="1000">
+                    <a href="resume.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="contact-btn">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Interests & <span class="highlight">Achievements</span>
+            </h2>
+            <div class="interests-grid">
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="interest-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="interest-title">Competitive Programming</h3>
+                    <p class="interest-description">Tech Lead of CP Club at Marwadi University. Top 40.82% in LeetCode Global Rankings.</p>
+                </div>
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="interest-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="interest-title">Leadership</h3>
+                    <p class="interest-description">Chairperson IEEE Women in Engineering (WIE) Affinity Group, promoting women in tech.</p>
+                </div>
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="interest-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="interest-title">Data Analytics</h3>
+                    <p class="interest-description">2nd Runner-Up in Tableau Analytics Showdown for building interactive dashboards.</p>
+                </div>
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="interest-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="interest-title">Full-Stack Development</h3>
+                    <p class="interest-description">2nd Runner-Up in Logic Leap Race for building responsive full-stack applications.</p>
+                </div>
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="interest-title">AI & Machine Learning</h3>
+                    <p class="interest-description">Passionate about computer vision, data science, and creating intelligent solutions.</p>
+                </div>
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="interest-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="interest-title">Academic Excellence</h3>
+                    <p class="interest-description">Maintaining 9.11/10 CGPA in B.Tech ICT at Marwadi University.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Tech <span class="highlight">Stack</span>
+            </h2>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-code"></i>
+                    <p>C++</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="700">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="800">
+                    <i class="fas fa-database"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="900">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="1000">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Tableau</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="1100">
+                    <i class="fas fa-brain"></i>
+                    <p>MATLAB</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="1200">
+                    <i class="fab fa-node-js"></i>
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Featured <span class="highlight">Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" onclick="openModal('modal1')">
+                    <div class="project-image emotion-recognition">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Face Emotion Recognition</h3>
+                        <p class="project-description">MATLAB-based system for detecting and classifying facial emotions using advanced image processing techniques.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-matlab">MATLAB</span>
+                            <span class="tag tag-cv">Computer Vision</span>
+                            <span class="tag tag-ml">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" onclick="openModal('modal2')">
+                    <div class="project-image train-booking">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Train Booking System (AnyWays)</h3>
+                        <p class="project-description">Web app that finds alternate train routes using DFS and Dijkstra algorithms with real-time IRCTC data.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-js">JavaScript</span>
+                            <span class="tag tag-node">Node.js</span>
+                            <span class="tag tag-mysql">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" onclick="openModal('modal3')">
+                    <div class="project-image job-vista">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">JobVista - Job Portal</h3>
+                        <p class="project-description">Dynamic job portal enabling users to search jobs and recruiters to manage listings with secure authentication.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-html">HTML</span>
+                            <span class="tag tag-css">CSS</span>
+                            <span class="tag tag-php">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" onclick="openModal('modal4')">
+                    <div class="project-image finance-dashboard">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Finance Dashboard</h3>
+                        <p class="project-description">Interactive dashboard for visualizing income, expenses, and investments with actionable insights.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-plotly">Plotly</span>
+                            <span class="tag tag-dash">Dash</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                Get In <span class="highlight">Touch</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 class="contact-title">Let's Connect!</h3>
+                    <p class="contact-description">
+                        I'm always excited to discuss new opportunities, collaborate on projects, or just chat about technology. 
+                        Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>iampayal018@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9054293225</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rajkot, Gujarat, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 Payal Makwana. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/Payal-mak" target="_blank" class="footer-social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/payal-makwana-a2b73829a/" target="_blank" class="footer-social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://leetcode.com/u/Payal-Makwana/" target="_blank" class="footer-social-link">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Face Emotion Recognition</h3>
+                <button onclick="closeModal('modal1')" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image emotion-recognition">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <p class="modal-description">
+                    Developed a comprehensive MATLAB-based system that detects and classifies facial emotions using advanced image processing and machine learning techniques. The system implements face tracking and landmark detection to improve classification accuracy.
+                </p>
+                <h4 class="modal-subtitle">Key Features:</h4>
+                <ul class="modal-list">
+                    <li>Real-time facial emotion detection</li>
+                    <li>Advanced landmark detection algorithms</li>
+                    <li>High accuracy classification system</li>
+                    <li>Applications in HCI and mental health monitoring</li>
+                </ul>
+                <h4 class="modal-subtitle">Technologies Used:</h4>
+                <div class="modal-tags">
+                    <span class="tag tag-matlab">MATLAB</span>
+                    <span class="tag tag-blue">Image Processing Toolbox</span>
+                    <span class="tag tag-green">Computer Vision Toolbox</span>
+                    <span class="tag tag-red">Machine Learning</span>
+                </div>
+                <a href="https://github.com/Payal-mak" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Train Booking System (AnyWays)</h3>
+                <button onclick="closeModal('modal2')" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image train-booking">
+                    <i class="fas fa-train"></i>
+                </div>
+                <p class="modal-description">
+                    Designed an intelligent web application that identifies alternate train routes using DFS and Dijkstra algorithms when direct trains are unavailable. Integrated with real-time IRCTC API data and food delivery services.
+                </p>
+                <h4 class="modal-subtitle">Key Features:</h4>
+                <ul class="modal-list">
+                    <li>Smart route finding with DFS and Dijkstra algorithms</li>
+                    <li>Real-time IRCTC API integration</li>
+                    <li>Food delivery integration (Zomato & Swiggy)</li>
+                    <li>Optimized travel planning interface</li>
+                </ul>
+                <h4 class="modal-subtitle">Technologies Used:</h4>
+                <div class="modal-tags">
+                    <span class="tag tag-js">JavaScript</span>
+                    <span class="tag tag-node">Node.js</span>
+                    <span class="tag tag-mysql">MySQL</span>
+                    <span class="tag tag-purple">IRCTC API</span>
+                </div>
+                <a href="https://github.com/Payal-mak" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">JobVista - Job Portal Website</h3>
+                <button onclick="closeModal('modal3')" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image job-vista">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="modal-description">
+                    Developed a comprehensive job portal that enables users to search and apply for jobs while allowing recruiters to post and manage job listings. Features secure authentication and responsive design.
+                </p>
+                <h4 class="modal-subtitle">Key Features:</h4>
+                <ul class="modal-list">
+                    <li>Secure user authentication for job seekers and recruiters</li>
+                    <li>Advanced job filtering and search functionality</li>
+                    <li>User dashboard for profile and application management</li>
+                    <li>Responsive design for all devices</li>
+                </ul>
+                <h4 class="modal-subtitle">Technologies Used:</h4>
+                <div class="modal-tags">
+                    <span class="tag tag-html">HTML</span>
+                    <span class="tag tag-css">CSS</span>
+                    <span class="tag tag-js">JavaScript</span>
+                    <span class="tag tag-php">PHP</span>
+                    <span class="tag tag-mysql">MySQL</span>
+                </div>
+                <a href="https://github.com/Payal-mak" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Personal Finance Dashboard</h3>
+                <button onclick="closeModal('modal4')" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image finance-dashboard">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <p class="modal-description">
+                    Built an interactive dashboard to visualize and track income, expenses, savings, and investments. Provides actionable insights based on spending patterns and real-time data analysis.
+                </p>
+                <h4 class="modal-subtitle">Key Features:</h4>
+                <ul class="modal-list">
+                    <li>Interactive data visualization</li>
+                    <li>Real-time expense tracking</li>
+                    <li>Spending pattern analysis</li>
+                    <li>Smart budgeting recommendations</li>
+                </ul>
+                <h4 class="modal-subtitle">Technologies Used:</h4>
+                <div class="modal-tags">
+                    <span class="tag tag-python">Python</span>
+                    <span class="tag tag-green">Pandas</span>
+                    <span class="tag tag-purple">Plotly</span>
+                    <span class="tag tag-red">Dash</span>
+                    <span class="tag tag-yellow">Matplotlib</span>
+                </div>
+                <a href="https://github.com/Payal-mak" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
