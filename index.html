@@ -57,12 +57,12 @@
                     Learning Today, Building Tomorrow
                 </p>
                 <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
-                    B.Tech ICT student at Marwadi University with a passion for creating innovative solutions through code. 
-                    Currently exploring the realms of web development, AI/ML, and competitive programming.
+                    Third-year B.Tech ICT student at Marwadi University with a passion for creating innovative solutions through code. 
+                    Currently exploring Web development, AI/ML, and competitive programming.
                 </p>
                 <div style="width: 100%;">
-                    <div class="social-links" data-aos="fade-up" data-aos-delay="800">
-                        <a href="https://github.com/Payal-mak" target="_blank" class="social-link">
+                <div class="social-links" data-aos="fade-up" data-aos-delay="800">
+                    <a href="https://github.com/Payal-mak" target="_blank" class="social-link">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/payal-makwana-a2b73829a/" target="_blank" class="social-link">
@@ -76,14 +76,84 @@
                         <a href="resume.pdf" download class="download-btn">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
+                        <button class="resume-btn" onclick="openResumePanel()">
+                            <i class="fas fa-briefcase"></i> Work Experience
+                        </button>
                         <a href="#contact" class="contact-btn">
                             Contact Me
                         </a>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="hero-shape"></div>
     </section>
+
+    <!-- Resume Panel -->
+    <div id="resume-panel" class="resume-panel">
+        <div class="resume-content">
+            <div class="resume-header">
+                <h3 class="resume-title">My Resume</h3>
+                <button onclick="closeResumePanel()" class="resume-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="resume-body">
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">B.Tech in Information and Communication Technology</h4>
+                            <p class="timeline-subtitle">Marwadi University, Rajkot, Gujarat</p>
+                            <p class="timeline-date">2022 - Present (Third Year)</p>
+                            <ul class="timeline-details">
+                                <li>Maintaining a CGPA of 9.11/10</li>
+                                <li>Active member of the Competitive Programming Club</li>
+                                <li>Chairperson of IEEE Women in Engineering (WIE) Affinity Group</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Summer Intern, IEEE Signal Processing Society</h4>
+                            <p class="timeline-subtitle">Gujarat Section’s Summer Mentorship Program 2025</p>
+                            <p class="timeline-date">Summer 2025</p>
+                            <ul class="timeline-details">
+                                <li>Selected for a mentorship program focused on signal processing projects</li>
+                                <li>Working on advanced algorithms for real-world applications</li>
+                                <li>Collaborating with industry experts and researchers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Summer Intern, AI Guru</h4>
+                            <p class="timeline-subtitle">AI/ML Domain, Ahmedabad, Gujarat</p>
+                            <p class="timeline-date">Summer 2025</p>
+                            <ul class="timeline-details">
+                                <li>Developing AI/ML models for real-world applications</li>
+                                <li>Hands-on experience with deep learning frameworks</li>
+                                <li>Contributing to innovative projects in an offline setting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-footer">
+                    <a href="IEEE_SPS_Offer.pdf" target="_blank" class="offer-letter-link" title="View IEEE SPS Offer Letter">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Interests Section -->
     <section id="about" class="about">

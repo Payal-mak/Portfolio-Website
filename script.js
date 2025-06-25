@@ -9,6 +9,23 @@ window.closeModal = function(modalId) {
   document.body.style.overflow = "auto";
 };
 
+// Resume panel functions
+window.openResumePanel = function() {
+  const resumePanel = document.getElementById("resume-panel");
+  if (resumePanel) {
+    resumePanel.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+};
+
+window.closeResumePanel = function() {
+  const resumePanel = document.getElementById("resume-panel");
+  if (resumePanel) {
+    resumePanel.classList.remove("show");
+    document.body.style.overflow = "auto";
+  }
+};
+
 // Form submission
 window.handleSubmit = function(event) {
   event.preventDefault();
@@ -53,15 +70,15 @@ function setTheme(theme) {
 
   // Update button icon based on theme
   const themeBtn = document.querySelector("#theme-toggle-btn i");
-  if (theme === "dark") {
-    themeBtn.classList.remove("fa-sun", "fa-terminal");
-    themeBtn.classList.add("fa-moon");
-  } else if (theme === "hacker") {
-    themeBtn.classList.remove("fa-sun", "fa-moon");
-    themeBtn.classList.add("fa-terminal");
-  } else {
-    themeBtn.classList.remove("fa-moon", "fa-terminal");
-    themeBtn.classList.add("fa-sun");
+  if (themeBtn) {
+    themeBtn.classList.remove("fa-sun", "fa-terminal", "fa-moon");
+    if (theme === "dark") {
+      themeBtn.classList.add("fa-moon");
+    } else if (theme === "hacker") {
+      themeBtn.classList.add("fa-terminal");
+    } else {
+      themeBtn.classList.add("fa-sun");
+    }
   }
 }
 
@@ -165,6 +182,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Close resume panel when clicking outside
+  const resumePanel = document.getElementById("resume-panel");
+  if (resumePanel) {
+    resumePanel.addEventListener("click", (e) => {
+      if (e.target === resumePanel) {
+        window.closeResumePanel();
+      }
+    });
+  }
 });
 
 // Close modal when clicking outside
