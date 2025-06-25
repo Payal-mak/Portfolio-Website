@@ -99,6 +99,7 @@ body {
   line-height: 1.6;
   color: var(--gray-800);
   background-color: var(--light);
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .container {
@@ -106,6 +107,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box; /* Ensure padding doesn't add to width */
 }
 
 a {
@@ -473,16 +475,19 @@ img {
   z-index: 1000;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.3s ease;
+  transform: translateX(100%); /* Start off-screen */
 }
 
 .resume-panel.show {
   display: block;
+  transform: translateX(0); /* Slide in */
 }
 
 .resume-content {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: auto; /* Ensure scrolling if content overflows */
 }
 
 .resume-header {
@@ -1161,23 +1166,27 @@ img {
   }
 
   .contact-content {
-    grid-template-columns: 1fr 1 Royalty;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr;
+  }
 
-.tech-grid {
-  grid-template-columns: repeat(4, 1fr);
-}
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.profile-image {
-  width: 180px;
-  height: 180px;
-}
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
 
-.resume-panel {
-  width: 400px;
-}
+  .resume-panel {
+    width: 400px;
+    max-width: 400px; /* Ensure it doesn't exceed this */
+    transform: translateX(0); /* Reset for desktop */
+  }
+
+  .resume-panel.show {
+    transform: translateX(0); /* Ensure it stays visible */
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1196,5 +1205,10 @@ img {
   .profile-image {
     width: 200px;
     height: 200px;
+  }
+
+  .resume-panel {
+    width: 450px;
+    max-width: 450px; /* Adjusted for larger screens */
   }
 }
