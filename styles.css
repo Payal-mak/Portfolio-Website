@@ -207,6 +207,8 @@ img {
   z-index: 1000;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  /* Ensure no overflow */
+  overflow: visible;
 }
 
 .navbar.scrolled {
@@ -217,7 +219,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 1rem; /* Adjusted padding for smaller screens */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -225,6 +231,7 @@ img {
   font-weight: 700;
   color: var(--primary);
   letter-spacing: -0.5px;
+  flex-shrink: 0; /* Prevent logo from shrinking */
 }
 
 .nav-links {
@@ -269,6 +276,7 @@ img {
 .theme-toggle {
   display: flex;
   align-items: center;
+  flex-shrink: 0; /* Prevent theme toggle from shrinking */
 }
 
 #theme-toggle-btn {
@@ -278,6 +286,7 @@ img {
   color: var(--gray-700);
   cursor: pointer;
   transition: var(--transition);
+  padding: 0.25rem; /* Add padding for better touch target */
 }
 
 #theme-toggle-btn:hover {
@@ -286,9 +295,13 @@ img {
 
 .mobile-menu-btn {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Increased for better visibility */
   color: var(--gray-700);
   cursor: pointer;
+  padding: 0.5rem; /* Ensure adequate touch area */
+  line-height: 1; /* Align icon vertically */
+  min-width: 40px; /* Minimum width to prevent clipping */
+  text-align: right; /* Align to right edge */
 }
 
 .mobile-menu {
@@ -1145,6 +1158,10 @@ img {
   .cta-buttons {
     flex-direction: row;
   }
+
+  .navbar-content {
+    padding: 1rem 1.5rem; /* Restore padding for larger screens */
+  }
 }
 
 @media (min-width: 768px) {
@@ -1154,7 +1171,7 @@ img {
   }
 
   .mobile-menu-btn {
-    display: none;
+    display: none; /* Hide on desktop */
   }
 
   .interests-grid {
@@ -1180,12 +1197,12 @@ img {
 
   .resume-panel {
     width: 400px;
-    max-width: 400px; /* Ensure it doesn't exceed this */
-    transform: translateX(0); /* Reset for desktop */
+    max-width: 400px;
+    transform: translateX(0);
   }
 
   .resume-panel.show {
-    transform: translateX(0); /* Ensure it stays visible */
+    transform: translateX(0);
   }
 }
 
@@ -1209,6 +1226,6 @@ img {
 
   .resume-panel {
     width: 450px;
-    max-width: 450px; /* Adjusted for larger screens */
+    max-width: 450px;
   }
 }
